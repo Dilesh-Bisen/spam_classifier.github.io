@@ -21,7 +21,7 @@ mnb_model = pickle.load(open('03_SMS_SPAM/sms_spam_classifier/mnb_model.pkl', 'r
 st.set_page_config(page_title="SMS Spam Classifier", page_icon="📱", layout="centered", initial_sidebar_state="expanded")
 
 with st.sidebar:
-    st.image('spam_logo.jpeg', use_column_width=True)
+    st.image('03_SMS_SPAM/sms_spam_classifier/spam_logo.jpeg', use_column_width=True)
     st.markdown('## Welcome to the Spam Classifier')
     st.markdown('This tool uses Machine Learning to detect whether an SMS message is spam or not.')
     st.markdown('### Features:')
