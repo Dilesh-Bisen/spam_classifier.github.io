@@ -1,4 +1,4 @@
-Project Link : (https://spam-or-not-dilesh-bisen.streamlit.app/)[https://spam-or-not-dilesh-bisen.streamlit.app/]
+Project Link : [https://spam-or-not-dilesh-bisen.streamlit.app/](https://spam-or-not-dilesh-bisen.streamlit.app/)
 # <b>SMS Spam Classifier</b>
 
 ## <b>Overview</b>
