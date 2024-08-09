@@ -4,7 +4,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import time
-
+nltk.download('punkt')
 ps = PorterStemmer()
 
 
