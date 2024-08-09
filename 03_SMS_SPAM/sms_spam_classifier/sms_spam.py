@@ -1,6 +1,8 @@
 import pickle
 import streamlit as st
 import nltk
+if not nltk.data.find('tokenizers/punkt'):
+    nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import time
