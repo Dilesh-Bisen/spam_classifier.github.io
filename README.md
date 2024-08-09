@@ -1,4 +1,5 @@
-Project Link : [https://spam-or-not-dilesh-bisen.streamlit.app/](https://spam-or-not-dilesh-bisen.streamlit.app/)
+Project Link: [https://spam-or-not-dilesh-bisen.streamlit.app/](https://spam-or-not-dilesh-bisen.streamlit.app/)
+
 # <b>SMS Spam Classifier</b>
 
 ## <b>Overview</b>
@@ -12,20 +13,20 @@ The SMS Spam Classifier is a web application built using Streamlit, designed to 
 ## <b>Installation</b>
 To set up and run the SMS Spam Classifier, follow these steps:
 1. Clone the Repository:</br>
-git clone [https://github.com/Dilesh-Bisen/spam_classifier.github.io.git](https://github.com/Dilesh-Bisen/spam_classifier.github.io.git)</br>
-cd spam_classifier
+   git clone [https://github.com/Dilesh-Bisen/spam_classifier.github.io.git](https://github.com/Dilesh-Bisen/spam_classifier.github.io.git)</br>
+   cd spam_classifier
 2. Create a Virtual Environment:</br>
-python -m venv venv
-source `venv\Scripts\activate` # On Windows
+   python -m venv venv</br>
+   source `venv\Scripts\activate` # On Windows
 3. Install Dependencies:</br>
-Ensure you have the required libraries by running: pip install -r requirements.txt
+   Ensure you have the required libraries by running: pip install -r requirements.txt
 4. Download NLTK Resources:</br>
-Run the following script to download necessary NLTK resources:</br>
-import nltk</br>
-nltk.download('punkt')</br>
-nltk.download('stopwords')</br>
+   Run the following script to download necessary NLTK resources:</br>
+   import nltk</br>
+   nltk.download('punkt')</br>
+   nltk.download('stopwords')</br>
 5. Run the Application:</br>
-Start the Streamlit app with: streamlit run app.py
+   Start the Streamlit app with: streamlit run sms_spam.py
 
 ## <b>Usage</b>
 - Enter your SMS message into the text area.
@@ -39,7 +40,7 @@ Start the Streamlit app with: streamlit run app.py
 - mnb_model.pkl: Pickled Multinomial Naive Bayes model.
 - spam_logo.jpeg: Logo image for the sidebar.
 
-## <b>Contributing<b>
+## <b>Contributing</b>
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ## <b>Contact</b>
