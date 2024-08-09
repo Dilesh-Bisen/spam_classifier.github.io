@@ -44,4 +44,4 @@ To set up and run the SMS Spam Classifier, follow these steps:
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ## <b>Contact</b>
-For questions or support, please contact [2dileshbisen@gmail.com].
+For questions or support, please contact <a href="mailto:2dileshbisen@gmail.com">2dileshbisen@gmail.com</a>.
