@@ -33,12 +33,11 @@ Start the Streamlit app with: streamlit run app.py
 - View the result indicating whether the message is spam or not.
 
 ## <b>Project Structure</b>
-- app.py: Main Streamlit application script.
+- sms_spam.py: Main Streamlit application script.
 - requirements.txt: List of Python dependencies.
-- 03_SMS_SPAM/sms_spam_classifier/:
-      - tfidf_vectorizer.pkl: Pickled TF-IDF vectorizer.
-      - mnb_model.pkl: Pickled Multinomial Naive Bayes model.
-      - spam_logo.jpeg: Logo image for the sidebar.
+- tfidf_vectorizer.pkl: Pickled TF-IDF vectorizer.
+- mnb_model.pkl: Pickled Multinomial Naive Bayes model.
+- spam_logo.jpeg: Logo image for the sidebar.
 
 ## <b>Contributing<b>
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
