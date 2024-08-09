@@ -52,7 +52,7 @@ if st.button('Predict'):
             st.markdown('<h2 style="color:#FF0000;">🚨 Spam Message 🚨</h2>', unsafe_allow_html=True)
             st.markdown('<p style="color:#FF6347;">This message has been flagged as spam.</p>', unsafe_allow_html=True)
         else:
-            st.markdown('<h2 style="color:#00FF00;">✔️ Not a Spam Message ✔️</h2>', unsafe_allow_html=True)
+            st.markdown('<h2 style="color:#00FF00;">✔️ Not a Spam Message</h2>', unsafe_allow_html=True)
             st.markdown('<p style="color:#32CD32;">This message is safe and not classified as spam.</p>', unsafe_allow_html=True)
     else:
         st.warning("Please enter a message to classify.")
