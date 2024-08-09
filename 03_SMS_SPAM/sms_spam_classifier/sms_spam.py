@@ -6,6 +6,7 @@ from nltk.stem.porter import PorterStemmer
 import time
 
 nltk.download('punkt')
+nltk.download('stopwords')
 
 ps = PorterStemmer()
 
