@@ -15,13 +15,13 @@ def convert(text):
     return " ".join(temp)
 
 
-tfidf_vector = pickle.load(open('tfidf_vectorizer.pkl', 'rb'))
-mnb_model = pickle.load(open('mnb_model.pkl', 'rb'))
+tfidf_vector = pickle.load(open('03_SMS_SPAM/Output_file/tfidf_vectorizer.pkl', 'rb'))
+mnb_model = pickle.load(open('03_SMS_SPAM/Output_file/mnb_model.pkl', 'rb'))
 
 st.set_page_config(page_title="SMS Spam Classifier", page_icon="🚨", layout="centered", initial_sidebar_state="expanded")
 
 with st.sidebar:
-    st.image('spam_logo.jpeg', use_column_width=True)
+    st.image('03_SMS_SPAM/Output_file/spam_logo.jpeg', use_column_width=True)
     st.markdown('## Welcome to the Spam Classifier')
     st.markdown('This tool uses Machine Learning to detect whether an SMS message is spam or not.')
     st.markdown('### Features:')
