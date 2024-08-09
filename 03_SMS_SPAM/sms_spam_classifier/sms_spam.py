@@ -15,8 +15,8 @@ def convert(text):
     return " ".join(temp)
 
 
-tfidf_vector = pickle.load(open('tfidf_vectorizer.pkl', 'rb'))
-mnb_model = pickle.load(open('mnb_model.pkl', 'rb'))
+tfidf_vector = pickle.load(open('03_SMS_SPAM/sms_spam_classifier/tfidf_vectorizer.pkl', 'rb'))
+mnb_model = pickle.load(open('03_SMS_SPAM/sms_spam_classifier/mnb_model.pkl', 'rb'))
 
 st.set_page_config(page_title="SMS Spam Classifier", page_icon="📱", layout="centered", initial_sidebar_state="expanded")
 
