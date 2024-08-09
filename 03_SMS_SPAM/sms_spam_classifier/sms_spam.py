@@ -1,24 +1,19 @@
 import pickle
 import streamlit as st
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import time
-import nltk
-from nltk.data import find
-from nltk.exceptions import LookupError
-try:
-    find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-ps = PorterStemmer()
 
+nltk.download('punkt')
+
+ps = PorterStemmer()
 
 def convert(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
     temp = [ps.stem(i) for i in text if i.isalnum() and i not in stopwords.words('english')]
     return " ".join(temp)
-
 
 tfidf_vector = pickle.load(open('03_SMS_SPAM/sms_spam_classifier/tfidf_vectorizer.pkl', 'rb'))
 mnb_model = pickle.load(open('03_SMS_SPAM/sms_spam_classifier/mnb_model.pkl', 'rb'))
@@ -39,31 +34,25 @@ with st.sidebar:
     st.markdown('3. See the result instantly!')
     st.markdown('---')
 
-# Main content
 st.markdown('<h1 style="color:#39FF14;">SMS Spam Classifier</h1>', unsafe_allow_html=True)
-st.markdown('<p style="color:#00FFFF;">Classify your messages with the power of Machine Learning.</p>',
-            unsafe_allow_html=True)
+st.markdown('<p style="color:#00FFFF;">Classify your messages with the power of Machine Learning.</p>', unsafe_allow_html=True)
 
-# Input section
 input_msg = st.text_area("Enter a message")
 
-# Prediction section
 if st.button('Predict'):
     if input_msg:
         with st.spinner('Analyzing...'):
-            time.sleep(1)  # Simulate processing time
+            time.sleep(1)
         transformed_msg = convert(input_msg)
         input_vector = tfidf_vector.transform([transformed_msg])
         predict = mnb_model.predict(input_vector)[0]
 
-        # Display result
         if predict == 1:
             st.markdown('<h2 style="color:#FF0000;">🚨 Spam Message 🚨</h2>', unsafe_allow_html=True)
             st.markdown('<p style="color:#FF6347;">This message has been flagged as spam.</p>', unsafe_allow_html=True)
         else:
             st.markdown('<h2 style="color:#00FF00;">✔️ Not a Spam Message ✔️</h2>', unsafe_allow_html=True)
-            st.markdown('<p style="color:#32CD32;">This message is safe and not classified as spam.</p>',
-                        unsafe_allow_html=True)
+            st.markdown('<p style="color:#32CD32;">This message is safe and not classified as spam.</p>', unsafe_allow_html=True)
     else:
         st.warning("Please enter a message to classify.")
 
