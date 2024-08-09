@@ -1,10 +1,15 @@
 import pickle
 import streamlit as st
-import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import time
-nltk.download('punkt')
+import nltk
+from nltk.data import find
+from nltk.exceptions import LookupError
+try:
+    find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 ps = PorterStemmer()
 
 
