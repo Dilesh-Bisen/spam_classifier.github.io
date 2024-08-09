@@ -12,7 +12,7 @@ The SMS Spam Classifier is a web application built using Streamlit, designed to 
 ## <b>Installation</b>
 To set up and run the SMS Spam Classifier, follow these steps:
 1. Clone the Repository:</br>
-git clone https://github.com/yourusername/spam_classifier.git
+git clone [https://github.com/yourusername/spam_classifier.git](https://github.com/Dilesh-Bisen/spam_classifier.github.io.git)</br>
 cd spam_classifier
 2. Create a Virtual Environment:</br>
 python -m venv venv
@@ -20,7 +20,7 @@ source `venv\Scripts\activate` # On Windows
 3. Install Dependencies:</br>
 Ensure you have the required libraries by running: pip install -r requirements.txt
 4. Download NLTK Resources:</br>
-Run the following script to download necessary NLTK resources:
+Run the following script to download necessary NLTK resources:</br>
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
