@@ -1,6 +1,6 @@
 streamlit
 nltk
-sklearn
+scikit-learn
 altair==5.3.0
 attrs==24.2.0
 blinker==1.8.2
@@ -19,6 +19,7 @@ jsonschema-specifications==2023.12.1
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 mdurl==0.1.2
+nltk==3.8.1
 numpy==2.0.1
 packaging==24.1
 pandas==2.2.2
@@ -38,6 +39,7 @@ scikit-learn==1.5.1
 scipy==1.14.0
 six==1.16.0
 smmap==5.0.1
+streamlit==1.37.1
 tenacity==8.5.0
 threadpoolctl==3.5.0
 toml==0.10.2
